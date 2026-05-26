@@ -1,0 +1,15 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Test / generated outputs
+test_*.dxf
+
+# Claude Code session memory
+.claude/
