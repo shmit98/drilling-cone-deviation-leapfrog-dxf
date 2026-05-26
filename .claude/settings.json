@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(& \"c:\\\\Users\\\\jacob\\\\Documents\\\\GitHub\\\\drilling cone deviation leapfrog dxf\\\\.venv\\\\Scripts\\\\python.exe\" --version)",
+      "PowerShell($bytes = [System.IO.File]::ReadAllBytes\\(\"c:\\\\Users\\\\jacob\\\\Documents\\\\GitHub\\\\drilling cone deviation leapfrog dxf\\\\test_output_cones.dxf\"\\) | Select-Object -First 4; $bytes -join ' ')"
+    ]
+  }
+}
