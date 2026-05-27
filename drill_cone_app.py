@@ -281,6 +281,18 @@ class App(tk.Tk):
 
         self.bar = ttk.Progressbar(f, length=480, mode='determinate')
         self.bar.grid(row=row, column=0, columnspan=3, padx=8, pady=6)
+        row += 1
+
+        ttk.Separator(f, orient='horizontal').grid(
+            row=row, column=0, columnspan=3, sticky='ew', pady=(10, 0))
+        row += 1
+
+        credit = tk.Label(
+            f, text="Made by Jacob Smith  ·  github.com/shmit98",
+            foreground='gray', cursor='hand2',
+            font=('TkDefaultFont', 8))
+        credit.grid(row=row, column=0, columnspan=3, pady=(2, 6))
+        credit.bind('<Button-1>', lambda _: __import__('webbrowser').open('https://github.com/shmit98'))
 
     # ------------------------------------------------------------------
     def _refresh_preview(self):
